@@ -16,7 +16,11 @@ ul {
     display: flex;
     list-style: none;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 a {
     text-decoration: none;
@@ -59,40 +63,46 @@ a {
     align-items: center;
     flex: auto;
 }
+
+.title {
+    margin-top: 48px;
+}
+
 .information .title {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
 }
 
-.informationPlaceholder {
-    width: 100px;
-    height: 100px;
-    border: solid #3882F6 3px;
+.imagePlaceholder {
+    width: 175px;
+    height: 175px;
+    border: solid #3882F6 4px;
     border-radius: 15px;
 }
 
 .subtextPlaceholder {
-    max-width: 150px;
+    max-width: 175px;
     text-align: center;
+    font-size: 14px;
+    color: grey;
 }
 
-.imageContainer {
+.imageAndSubtextContainer {
     display: flex;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.subtextContainer {
+.informationContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 64px;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 /* Quote Section */
 
-.quote {
+.quoteSection {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,12 +110,17 @@ a {
     background-color: #E5E7EB;
     font-size: 36px;
     color: #1F2937;
-    font-weight: 1;
+}
+
+.quote {
+    max-width: 500px;
+    font-weight: 100;
     font-style: italic;
 }
 
-.quote .from {
+.from {
     font-size: 18px;
+    font-weight: 700;
 }
 
 /* Sign Up Button Section */
