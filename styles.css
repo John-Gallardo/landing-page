@@ -32,17 +32,21 @@ a {
     display: flex;
     justify-content: space-around;
     padding: 16px;
+    font-size: 16px;
 }
 
 .header .logo {
     font-size: 24px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .hero {
     display: flex;
-    flex-direction: column;
     flex: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 64px;
 }
 
 .header, .hero {
@@ -50,8 +54,33 @@ a {
     background-color: #1F2937;
 }
 
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .heroPlaceholder {
     background-color: grey;
+    padding: 100px;
+}
+
+#heroMainText {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#heroSubtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#heroButton {
+    background-color:#3882F6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
 }
 
 /* Information Section */
@@ -133,7 +162,7 @@ a {
     padding: 32px;
 }
 
-.buttonSection, button {
+.buttonSection, #signUpButton {
     background-color: #3882F6;
     color: white;
     border-color: white;
